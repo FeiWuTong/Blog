@@ -37,16 +37,16 @@ class Draw:
         pass
         
 if __name__ == '__main__':
-	pass
+    pass
 ```
 
 这里为*Draw*类额外加了两个参数`index`和`fn`。`fn`是为了读取多个文件设置的文件名参数，`index`最初仅仅是作为数据的序号（横坐标）引入的一个参数。
 
-将代码填入框架中，用两个删减后的数据文件进行简单的功能测试（每个大约1M，7万行）。这里`index`可以通过调用`update_index`来完成多个文件的连续绘图。
+将代码填入框架中，用两个删减后的数据文件进行简单的功能测试（每个大约1M，7万行）。这里`index`可以通过调用`update_index`进行横坐标起点的更新，以完成多个文件的连续绘图。
 
 ```python
 class Draw:
-	def __init__(self, index = 1):
+    def __init__(self, index = 1):
         self.index = index
         self.plot = plt.subplot(111)
         self.length = 0
@@ -72,19 +72,74 @@ class Draw:
                           self.data, c = 'c', marker = '.')
 
 if __name__ == '__main__':
-	prefix = 'datafile'
-	d = Draw()
-	for i in range(1, 3):
-		d.set_fn(prefix + str(i))
-		d.read_data()
-	    d.draw_scatter()
-	    d.update_index()
-	plt.show()
+    prefix = 'datafile'
+    d = Draw()
+    for i in range(1, 3):
+        d.set_fn(prefix + str(i))
+        d.read_data()
+        d.draw_scatter()
+        d.update_index()
+    plt.show()
 ```
 
-结果：
+绘图效果：
+
+![fig01-01](./Figure/fig01-01.png)
+
+可以看出Plot绘制的基本功能已经有了，接下来可以尝试一下用分割后单个190M的数据文件（即[概况](概况)中的输入）进行测试。
+
+毫无任何意外的，内存爆掉了XD。
+
+可以简单地分析一下，因为绘图的过程中数据都是会读入内存中的，因此会撑爆内存的地方一个是`read_data`，另一个则是`draw_scatter`。前者很好理解，因为用了`f.readlines()`，将数据一次性读入内存中，对于大文件而言内存负担会很大。但很明显这并不是主要的原因，文件仅有190M大小，但内存的使用量很快就超过了7G，导致爆存，原因只可能是在使用这批数据绘图的`draw_scatter`中了。在`plot.scatter`中一次性读取极大数据量的数据绘图会占用极大的内存空间，每个数据点以及相关的属性在未完成整体的绘制前都会消耗相应的内存资源，且在plot的过程中得不到释放（具体细节可以参考python库文件的`matplotlib/axes/_axes.py`)。
+
+分析完后可以做个简单的修改。由于Python的子图可以进行多次Plot的绘制（当然这也是在一幅图中绘制多条曲线时经常用到的方式），于是对每次Plot绘制设置一个绘点的阈值上限，达到上限时再重新Plot一次，并用新的数据进行填充。
+
+```python
+class Draw:
+    def __init__(self, index = 1):
+        self.index = index
+        self.plot = plt.subplot(111)
+        self.length = 0
+        self.data = []
+        self.filename = ''
+        self.datalimit = 100000
+
+    def read_data_with_limit(self):
+        with open(self.filename, 'r') as f:
+            current = 0
+            for line in f:
+                if current == self.datalimit:
+                    current = 0
+                    self.draw_scatter()
+                    self.update_index()
+                    self.length = 0
+                    self.data = []
+                else:
+                    self.data.append(line)
+                    self.length += 1
+                    current += 1
+            if self.data:
+                self.draw_scatter()
+                self.update_index()
+                self.length = 0
+                self.data = []
+```
+
+这里顺便将读取文件数据的`readlines()`改为直接用内部管理buffer的`for line in fileHanlder`方式，解决读取大文件的问题。看一下绘图的效果如何：
+
+![fig01-02](./Figure/fig01-02.png)
+
+看起来还不错，内存占用的开销到2G多就停下来了，能够正常work达成所需的目标（输出）。
+
+虽然到这里就结束了，因为已经满足了kimono君的所需。但优化的空间肯定还有，而且10万个点的数量限制与对应的内存开销有什么关系，是否有更好的方式，这些还是值得去思考一番的。
+
+[源码在这](./Code/AmountDraw.py)。
 
 ## 参考资料
 
 1. [Python数据可视化—matplotlib笔记](https://blog.csdn.net/qq_34264472/article/details/53814635)
 1. [python 大文件以行为单位读取方式比对](https://www.cnblogs.com/aicro/p/3371986.html)
+
+## Time
+
+2019/09/26 15:02
