@@ -67,3 +67,15 @@ func newTransaction(nonce uint64, to *common.Address, amount *big.Int, gasLimit 
 > AccountNonce(8bytes) + Price(8bytes?) + Amount(8bytes?) + GasLimit(8bytes) + Recipient(20bytes) + V(1bytes) + R(32bytes) + S(32bytes) = 117bytes
 
 上面只是理论分析，接下来在Geth中实际测试一下，在这里会对Geth的源码进行轻微的修改，使其能够直接输出单笔交易的大小。
+
+...
+
+现在的问题是，在交易结构中类型为`big.Int`的字段，其占用的空间大小究竟是多少？
+
+## 分析
+
+
+## 总结
+
+
+## 参考资料
