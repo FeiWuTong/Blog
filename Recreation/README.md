@@ -13,7 +13,6 @@ Kimono从小开始就一直很喜欢玩，会玩的东西非常多。
 * 日本立直麻将
 	* [为什么Kimono喜欢玩日本立直麻将](Recreation/Why-I-Love-RichiMahjong.md)
 		* [前言](Recreation/Why-I-Love-RichiMahjong.md#前言)
-		* []
 	* [日本立直麻将-学习笔记](Recreation/Mahjong.md)
 		* [前言](Recreation/Mahjong.md#前言)
 		* [雀士匠人](Recreation/Mahjong.md#雀士匠人)
@@ -26,7 +25,3 @@ Kimono从小开始就一直很喜欢玩，会玩的东西非常多。
 * 旅游
 
 * 滑板
-
-## 更新时间
-
-2019-10-15 14:46:55
