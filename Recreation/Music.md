@@ -23,13 +23,19 @@ kimono真的好爱好爱音乐，平均一年4000+小时是沉浸在音乐的世
 
 > 2020
 
-1. Silence
+1. Silence - n-buna / Sarah Furukawa （至今最喜欢，单周最高530遍，月累计1200+，至今2200+）
+2. 生花 - 花たん （花碳的高音和刀剑声，配乐的低音直接红心拉满了）
+3. Marie - aimer
+4. Airwaves - Adib Sin / Azuria Sky / B.L. Hav （很喜欢很喜欢开头和第一段）
+5. 漂流 with KIVΛ - CytusⅡ.ver - 菅原纱由理 (THE SxPLAY), KIVΛk
 
 > 2019
 
-
-
-> 2018
+1. Unlasting - LiSA
+2. 暖かい生き物 - 川下穷江
+3. 海の幽霊 - 米津玄師
+4. ハレハレヤ - RincolF
+5. МиМиМи - Dramma
 
 ## 最爱的歌手/组合
 
