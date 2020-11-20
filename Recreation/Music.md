@@ -45,12 +45,27 @@ kimono真的好爱好爱音乐，平均一年4000+小时是沉浸在音乐的世
 * Linkin park
 * Egoist / Chelly
 * 酸欠少女さユり
+* Reol
 * 米津玄師 / ハチ
 * Aimer
 * 澤野弘之
 * Mili / ミリー
 
+## 最爱的歌儿
+
+无论听多少遍，再听总会沉醉。越靠前越本命。
+
+1. Silence - n-buna / Sarah Furukawa - (研1)
+2. 庭園にて。 - acane_madder - (高三毕业)
+3. いつか降る雨、桜 - 紫咲ほたる - (曾见雨下樱成冢 / 终有一日雨降樱，高二)
+4. SPiCa -paid vacation mix- ちびた / 古川本舗 - （大一）
+
 ## 国语经典啦
+
+* 你瞒我瞒
+* 不能说的秘密
+* 爱太疚
+* 单车
 
 ## Album
 
