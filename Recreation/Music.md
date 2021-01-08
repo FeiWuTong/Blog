@@ -1,6 +1,6 @@
 # Kimono所爱的音乐
 
-kimono真的好爱好爱音乐，平均一年4000+小时是沉浸在音乐的世界里，最长的一天超过15小时的音乐时间。截止至目前，kimono已经听过30k+的无重复音乐了，而喜欢的歌重复次数从50到2000+次不等。
+kimono真的好爱好爱音乐，平均一年有4000小时是沉浸在音乐的世界里，最长的一天超过15小时的音乐时间。截止至目前，kimono已经听过30k+的无重复音乐了，而喜欢的歌重复次数从50到2000+次不等。
 
 喜欢的类型有很多：
 
@@ -21,6 +21,10 @@ kimono真的好爱好爱音乐，平均一年4000+小时是沉浸在音乐的世
 
 ## 年度榜单
 
+> 2021
+
+1. 大迷惑星。 - 當山みれい
+
 > 2020
 
 1. Silence - n-buna / Sarah Furukawa （至今最喜欢，单周最高530遍，月累计1200+，至今2200+）
@@ -29,6 +33,17 @@ kimono真的好爱好爱音乐，平均一年4000+小时是沉浸在音乐的世
 4. Airwaves - Adib Sin / Azuria Sky / B.L. Hav （很喜欢很喜欢开头和第一段）
 5. 漂流 with KIVΛ - CytusⅡ.ver - 菅原纱由理 (THE SxPLAY), KIVΛk
 
+**This year EDM recommendation!!!**
+
+1. Aika「series」- Wildflower / Blythe / Hiraeth / cross our hearts / Divinity / Bloom / Paintings / I Love You, Goodnight
+2. Wisp X「series」- Dew / Petal / Song of the forest / Hollow
+
+**This year NIHON Rap recommendation!!!**
+
+1. 21世紀難民 - 電波少女 / REOL
+2. クビナワ - 電波少女 / ぼくのりりっくのぼうよみ
+3. 何様 - SKY-HI / ぼくのりりっくのぼうよみ
+
 > 2019
 
 1. Unlasting - LiSA
@@ -36,6 +51,10 @@ kimono真的好爱好爱音乐，平均一年4000+小时是沉浸在音乐的世
 3. 海の幽霊 - 米津玄師
 4. ハレハレヤ - RincolF
 5. МиМиМи - Dramma
+
+**This year EDM recommandation!!!**
+
+徐梦圆「series」- China-?
 
 ## 最爱的歌手/组合
 
@@ -68,6 +87,7 @@ kimono真的好爱好爱音乐，平均一年4000+小时是沉浸在音乐的世
 * 不能说的秘密
 * 爱太疚
 * 单车
+* 浮夸
 
 ## Album
 
